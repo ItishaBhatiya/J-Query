@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box"></div>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle(Hide/Show)</button>
+    </br>
+    <input type="text">
+
+    <script src="jq/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#hide").click(function(){
+            //     $(".box").hide(1000);
+            // });
+
+            // $("#show").click(function(){
+            //     $(".box").show(2000);
+            // });
+
+            // $("#toggle").click(function(){
+            //     $(".box").toggle();
+            // });
+
+            // $(".box").mouseenter(function(){
+            //     $(this).hide(1000);
+            // });
+
+            // $(".box").mouseleave(function(){
+            //    $(this).show(2000);
+            // });
+
+            // $('input').keypress(function(){
+            //     $(this).css("background-color","blue");
+            //     $(this).css("color","white");
+            //     $(this).css("font-size","18px");
+            // });
+
+            // $("input").keyup(function(){
+            //     $(this).css("background-color","olive");
+            // });
+
+            // $("input").keydown(function(){
+            //     $(this).css("background-color","coral");
+            // });
+
+            // $("input").focus(function(){
+            //     $(this).css("background-color","white");
+            // });
+
+            $("#hide").click(function(){
+                (".box").hide(1000);
+            });
+
+            $("#hide").click(function(){
+                $('.box').slideToggle();
+            });
+            $("#show").click(function(){
+                $(this).css('padding','30px');
+            });
+
+        });
+    </script>
+
+</body>
+</html>

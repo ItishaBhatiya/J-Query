@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts css -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css"/>
+
+    <!-- calender css  -->
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@4.3.1/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.css">
+    <link rel="stylesheet" href="css/calender.css">
+   
+    <!-- custom css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Chroma- calender</title>
+</head>
+
+<body>
+    <aside>
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="error" class="logo-show">
+            <img src="img/logo-mini.svg" alt="error" class="hide">
+        </a>
+        <div class="side-bar">
+            <img src="img/face6.jpg" alt="error">
+            </br>
+            <h3>Itisha Bhatiya</h3>
+        </div>
+        <ul class="sidebar">
+            <li class="side-main active">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-house show"></i>
+                        <span>Dashboard</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-compass"></i>
+                        <span>Page Layouts</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Boxed</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> RTL</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Horizontal Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Horizontal Menu 2</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Apps</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Email</a>
+                    </li>
+                    <li>
+                        <a href="calender.html"><i class="fa-regular fa-circle"></i> Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> ToDo List</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Gallery</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Widgets</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#">Widgets</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Sidebar Layouts</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Compact Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Icon Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sidebar Hidden</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sidebar Overlay</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sidebar Fixed</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-star"></i>
+                        <span>Basic UI Elements</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Accordians</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Badges</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Breadcrumbs</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Dropdowns</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Modals</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Progress Bar</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Pagination</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Tabs</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Typography</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Tooltips</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-sliders fa-rotate-90"></i>
+                        <span>Advanced Elements</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Dragula</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Clip-Board</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Context Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sliders</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Carousel</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Colcade</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Loaders</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Form Elements</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Basic Elements</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Advanced Elements</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Validation</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Wizard</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180"></i>
+                        <span>Editors</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Text Editors</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Code Editors</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Charts</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Chart Js</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Morris</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Flot</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Google Charts</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sparkline Js</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> C3 Charts</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Chartists</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> JustGage</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-grip"></i>
+                        <span>Tables</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Basic Table</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Data Table</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Js-Grid</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Sortable Table</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-comments"></i>
+                        <span>Popups</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Popups</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-life-ring"></i>
+                        <span>Notifications</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Notifications</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Icons</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Flag Icons</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Font Awesome</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Simple Line Icons</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Themify Icons</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="map.html">
+                    <div class="flex">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>Maps</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Mapeal</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Vector Map</a>
+                    </li>
+                    <li>
+                        <a href="map.html"><i class="fa-regular fa-circle"></i> Google Map</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-user-lock"></i>
+                        <span>User Pages</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Login</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Login 2</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Register</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Register 2</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> LockScreen</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <span>Error Pages</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> 404</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> 500</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-user"></i>
+                        <span>General Pages</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> FAQ 2</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> News Grid</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Time line</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Search Results</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Portfolio</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>E-Commers</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Invoice</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Pricing Table</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Orders</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="side-main">
+                <a href="#">
+                    <div class="flex">
+                        <i class="fa-regular fa-file"></i>
+                        <span>Documentation</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </a>
+                <ul class="side-submenu">
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle"></i> Documentation</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+
+    <main>
+        <header>
+            <div class="row justify-between align-center">
+                <a href="#" class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <nav>
+                    <ul class="row align-center">
+                        <li>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/india.jpg" alt="error"></a>
+                        </li>
+                        <li class="theme">
+                            <a href="#"><i class="fa-regular fa-sun"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="flex align-center">
+                                    <img src="img/face1.jpg" alt="error">
+                                    <div>
+                                        <h2>Larry Garner</h2>
+                                        <p>web designer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-gear fa-spin"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- dashboadrd section -->
+        <div class="dashboard row justify-between">
+            <h2>Dashboard</h2>
+            <p><i class="fa-solid fa-share-from-square"></i><span>Export CSV</span></p>
+        </div>
+
+        <!-- calender section -->
+        <section>
+            <div id='calendar'></div>
+        </section>
+
+        <!-- footer section -->
+        <footer>
+            <p>Copyright © 2023. Designed with ❤ by Itisha All rights reserved</p>
+        </footer>
+
+    </main>
+
+    <script src="jq/jquery-3.7.1.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="jq/chart.js"></script>
+    <script src="jq/shadowcahrt.js"></script>
+    <script src="jq/barchart.js"></script> -->
+    <script src="https://unpkg.com/@fullcalendar/core@4.3.1/main.min.js"></script>
+    <script src="https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+    <script src="jq/calender.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.theme').click(function () {
+                $(".fa-sun").toggleClass('fa-moon');
+                $("body").toggleClass('light');
+            })
+            $(".menu").click(function () {
+                $("aside").toggleClass("newaside");
+                $("main").toggleClass("newmain");
+                $(".logo-show").toggle();
+                $(".hide").toggle();
+            })
+        })
+    </script>
+
+    <!-- slidebar js -->
+    <script>$.sidebarMenu = function (menu) {
+            var animationSpeed = 300;
+
+            $(menu).on('click', 'li a', function (e) {
+                var $this = $(this);
+                var checkElement = $this.next();
+
+                if (checkElement.is('.side-submenu') && checkElement.is(':visible')) {
+                    checkElement.slideUp(animationSpeed, function () {
+                        checkElement.removeClass('menu-open');
+                    });
+                    checkElement.parent("li").removeClass("active");
+                }
+
+                //If the menu is not visible
+                else if ((checkElement.is('.side-submenu')) && (!checkElement.is(':visible'))) {
+                    //Get the parent menu
+                    var parent = $this.parents('ul').first();
+                    //Close all open menus within the parent
+                    var ul = parent.find('ul:visible').slideUp(animationSpeed);
+                    //Remove the menu-open class from the parent
+                    ul.removeClass('menu-open');
+                    //Get the parent li
+                    var parent_li = $this.parent("li");
+
+                    //Open the target menu and add the menu-open class
+                    checkElement.slideDown(animationSpeed, function () {
+                        //Add the class active to the parent li
+                        checkElement.addClass('menu-open');
+                        parent.find('li.active').removeClass('active');
+                        parent_li.addClass('active');
+                    });
+                }
+                //if this isn't a link, prevent the page from being redirected
+                if (checkElement.is('.side-submenu')) {
+                    e.preventDefault();
+                }
+            });
+        }
+
+        $.sidebarMenu($('.sidebar'))
+
+        $(window).on('scroll', function () {
+            let scroll = $(window).scrollTop();
+            let oTop = $('.progress-bar').offset().top - window.innerHeight;
+            if (scroll > oTop) {
+                $(".progress-bar").addClass("progressbar-active");
+            }
+            else {
+                $(".progress-bar").removeClass("progressbar-active");
+            }
+        });
+
+
+    </script>
+    <!-- theme js -->
+</body>
+
+</html>

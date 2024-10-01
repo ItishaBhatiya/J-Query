@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h2>Top Categories</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Nayka Makeup Kit</h3>
+                            <img src="https://images.pexels.com/photos/234220/pexels-photo-234220.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>PH Beauty Lipstick</h3>
+                            <img src="https://images.pexels.com/photos/9777328/pexels-photo-9777328.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Venus Eye Shadow</h3>
+                            <img src="https://images.pexels.com/photos/2639947/pexels-photo-2639947.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="product-box">
+                            <h3>Venue Cleansing Foam</h3>
+                            <img src="https://images.pexels.com/photos/2587175/pexels-photo-2587175.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="product-box">
+                            <h3>Lakme Chocolate Lipstick</h3>
+                            <img src="https://images.pexels.com/photos/7664873/pexels-photo-7664873.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Lakme Makeup Brush</h3>
+                            <img src="https://images.pexels.com/photos/7290669/pexels-photo-7290669.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>MayBeLine Eyeshadow Palate</h3>
+                            <img src="https://images.pexels.com/photos/7290741/pexels-photo-7290741.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Juice Nail Kit</h3>
+                            <img src="https://images.pexels.com/photos/3997359/pexels-photo-3997359.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Hype Aloe Vera Gel</h3>
+                            <img src="https://images.pexels.com/photos/14798340/pexels-photo-14798340.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-box">
+                            <h3>Thalia Boutique Fig Milk</h3>
+                            <img src="https://images.pexels.com/photos/15147321/pexels-photo-15147321/free-photo-of-fig-milk-hand-wash.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="error">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            // slidesPerView: "auto",
+            slidesPerView: "2",
+            loop: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

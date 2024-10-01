@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    padding: 50px 0;
+}
+h3{
+    text-align: center;
+}
+.product-box{
+    border: 10px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #f7f7f7;
+}
+img{
+    height:500px;
+    width:500px;
+    border-radius:10px;
+    
+}
